@@ -10,15 +10,19 @@
 
 <body>
     <p id='warning' hidden></p>
-    <button id="btnGetCoordinates">Get GPS Coordinates</button>
+    <!-- <button id="btnGetCoordinates">Get GPS Coordinates</button> -->
     <p>
         Latitude: <span id='latitude'></span><br>
         Longitude: <span id='longitude'></span><br>
         Accuracy: <span id='accuracy'></span>
     </p>
+    <p>Readings (<span id='readingsCount'></span>)
+        <ul id="readingsList">
+        </ul>
+    </p>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
