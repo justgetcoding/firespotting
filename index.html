@@ -5,25 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FireSpotting Site</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin="" />
+    <link rel="stylesheet" href="css/site.css">
+    <title>FireSpotter</title>
 </head>
 
 <body>
+    <h1>FireSpotter</h1>
     <p id='warning' hidden></p>
-    <!-- <button id="btnGetCoordinates">Get GPS Coordinates</button> -->
-    <p>
+    <h2>
+        Reporting a Fire?
+    </h2>
+    
+    <h3>Photo</h3>
+    <p>Choose file</p>
+    <div class="photo_form">
+        <input id="photo_input" type="file">
+        <div id="imagePreview"></div>
+    </div>
+
+    <h3>Map</h3>
+    <div class='map' id='mapid'></div>
+       <p>
         Latitude: <span id='latitude'></span><br>
         Longitude: <span id='longitude'></span><br>
         Accuracy: <span id='accuracy'></span>
     </p>
-    <p>Readings (<span id='readingsCount'></span>)
+    <p>Last 5 Readings (Total Taken: <span id='readingsCount'></span>)
         <ul id="readingsList">
         </ul>
     </p>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
     <script src="js/index.js"></script>
+
 </body>
 
 </html>
